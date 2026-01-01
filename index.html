@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>💸 Expense Tracker</h2>
+
+    <h3>Your Balance</h3>
+    <h1 id="balance">₹0</h1>
+
+    <div class="summary">
+        <div class="income">
+            <h4>💰 Income</h4>
+            <p id="income">₹0</p>
+        </div>
+        <div class="expense">
+            <h4>💸 Expense</h4>
+            <p id="expense">₹0</p>
+        </div>
+    </div>
+
+    <h3>Add Transaction</h3>
+    <form id="form">
+        <input type="text" id="text" placeholder="Description" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+
+        <button>Add Transaction</button>
+    </form>
+
+    <h3>History</h3>
+    <ul id="list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

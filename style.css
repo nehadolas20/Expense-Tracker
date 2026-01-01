@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Card */
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 15px 0 5px;
+    color: #334155;
+}
+
+#balance {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #0f172a;
+}
+
+/* Summary */
+.summary {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.summary div {
+    flex: 1;
+    background: #f8fafc;
+    padding: 12px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.income {
+    color: #16a34a;
+}
+
+.expense {
+    color: #dc2626;
+}
+
+/* Form */
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 12px;
+    border: 1px solid #cbd5f5;
+    outline: none;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #6366f1;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+/* Transaction List */
+ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+li {
+    background: #f8fafc;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 5px solid;
+}
+
+li.income {
+    border-color: #22c55e;
+}
+
+li.expense {
+    border-color: #ef4444;
+}
+
+/* Delete Button */
+li button {
+    background: #ef4444;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    font-size: 12px;
+}
+/* Laptop & larger screens */
+@media (min-width: 900px) {
+    .container {
+        max-width: 600px;
+        padding: 35px;
+    }
+
+    .summary {
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #balance {
+        font-size: 2.6rem;
+    }
+}
